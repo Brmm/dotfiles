@@ -1,0 +1,25 @@
+#!/bin/bash
+
+bigfiles() {
+  sudo find / -type f -size +100000k -exec ls -lh {} \;
+}
+
+cdfinder() {
+  cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')"
+}
+
+set_aws_env_profile() {
+  if  $(aws configure list  --profile $1 > /dev/null 2>&1); then
+    export AWS_ACCESS_KEY_ID=$(aws configure get aws_access_key_id --profile $1)
+    export AWS_SECRET_ACCESS_KEY=$(aws configure get aws_secret_access_key --profile $1)
+    export AWS_DEFAULT_REGION=$(aws configure get region --profile $1)
+
+    echo "AWS Credentials added to env for profile $1"
+  else
+    echo "Profile $1 not found in aws cli"
+  fi
+}
+
+copy_dotfiles() {
+   cp $HOME/setup/dotfiles/.??* $HOME
+}

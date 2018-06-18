@@ -1,0 +1,5 @@
+init.author.name=Bram Monstrey
+init.author.email=bram@marbledevelopment.com
+init.license=MIT
+save=true
+save-prefix=~

@@ -1,0 +1,15 @@
+[user]
+    name = Bram Monstrey
+    email = monstrey.bram@gmail.com
+[color]
+    ui = auto
+[alias]
+  info = log --graph --pretty=format:'%C(45)%h%Creset -%C(green)%d%Creset %s %C(25)(%cr) %C(45)<%an>%Creset' --date=relative
+[core]
+  editor = nano
+  excludesfile = ~/.gitignore
+  trustctime = false
+  pager = diff-so-fancy
+
+[url "https://"]
+    insteadOf = git://
