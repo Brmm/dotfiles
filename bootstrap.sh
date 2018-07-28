@@ -8,17 +8,18 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ## Install binaries and applications with brew
-chmod +x brew.sh
+chmod +x ./brew.sh
 ./brew.sh
 
 ## Copy dotfiles
-cp ./.??* $HOME
+cp ./home/.??* $HOME
 
 ## Run macos script
-chmod +x macos.sh
+chmod +x ./macos.sh
 ./macos.sh
 
 ## Install node.js + global modules
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -55,7 +56,6 @@ open "/Applications/Clipy.app"
 open "/Applications/Flux.app"
 open "/Applications/Tunnelblick.app"
 open "/Applications/iTerm.app"
-open "/Applications/iStat Menus.app"
 open "/Applications/Dropbox.app"
 open "/Applications/Robo 3T.app"
 open "/Applications/GeekTool.app"

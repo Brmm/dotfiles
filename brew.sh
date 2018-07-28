@@ -13,7 +13,6 @@ brew update
 brew install coreutils
 brew install bash-completion
 brew install openssh
-brew install nvm
 brew install htop
 brew install curl
 brew install git
@@ -50,6 +49,7 @@ if ! fgrep -q "/usr/local/bin/bash" /etc/shells; then
   sudo chsh -s /usr/local/bin/bash $(whoami)
 fi;
 
+#brew tap homebrew/cask-version
 brew cask install iterm2
 brew cask install textmate
 brew cask install google-chrome
@@ -59,7 +59,7 @@ brew cask install robo-3t
 brew cask install sublime-text
 brew cask install vlc
 brew cask install cyberduck
-brew cask install google-chrome-canary
+# brew cask install google-chrome-canary
 brew cask install whatsapp
 brew cask install dropbox
 brew cask install tunnelblick
