@@ -20,6 +20,7 @@ brew install ffmpeg
 brew install bash
 brew install imagemagick
 brew install mpv
+brew install telnet
 brew install mongodb
 brew install openssl
 brew install python
@@ -31,8 +32,6 @@ brew install youtube-dl
 brew install rsync
 brew install dockutil
 brew install ansible
-brew install mysql
-brew install watchman
 brew install jq
 brew install wine
 brew install tor
@@ -42,6 +41,11 @@ brew install diff-so-fancy
 brew install oath-toolkit
 brew install terraform
 brew install nmap
+brew install packer
+brew install redis
+brew install opencv
+brew install interline-io/planetutils/osmctools
+#brew install mas
 
 ## use the brew bash version as default shell
 if ! fgrep -q "/usr/local/bin/bash" /etc/shells; then
@@ -54,12 +58,10 @@ brew cask install iterm2
 brew cask install textmate
 brew cask install google-chrome
 brew cask install firefox
-brew cask install little-snitch
 brew cask install robo-3t
 brew cask install sublime-text
 brew cask install vlc
 brew cask install cyberduck
-# brew cask install google-chrome-canary
 brew cask install whatsapp
 brew cask install dropbox
 brew cask install tunnelblick
@@ -68,12 +70,12 @@ brew cask install transmission
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install clipy
-brew cask install sketch
-brew cask install sequel-pro
-brew cask install geektool
-brew cask install google-cloud-sdk
+#brew cask install sketch
+#brew cask install sequel-pro
+#brew cask install google-cloud-sdk
 brew cask install qlstephen
 brew cask install qlmarkdown
 brew cask install quicklook-json
+#brew cask install pgadmin4
 
 brew cleanup

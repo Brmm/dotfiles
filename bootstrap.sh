@@ -19,15 +19,15 @@ chmod +x ./macos.sh
 ./macos.sh
 
 ## Install node.js + global modules
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-nvm install 8
+nvm install 10
 
-nvm use 8
-npm install -g eslint mbview npm npm-check-updates create-react-native-app yarn
+nvm use 10
+npm install -g eslint npm npm-check-updates create-react-native-app yarn serverless
 
 ## Copy iTerm2 settings
 defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.00001
@@ -52,10 +52,11 @@ dockutil --add "/Applications/FireFox.app"
 dockutil --add "/Applications/Calendar.app"
 dockutil --add "/Applications/Notes.app"
 
+open "/Applications/Sublime Text.app"
 open "/Applications/Clipy.app"
 open "/Applications/Flux.app"
 open "/Applications/Tunnelblick.app"
 open "/Applications/iTerm.app"
 open "/Applications/Dropbox.app"
 open "/Applications/Robo 3T.app"
-open "/Applications/GeekTool.app"
+open "/Applications/Cyberduck.app"
