@@ -27,7 +27,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install 10
 
 nvm use 10
-npm install -g eslint npm npm-check-updates create-react-native-app yarn serverless
+npm install -g eslint npm npm-check-updates create-react-native-app yarn serverless tslint typescript prettier pnpm pm2 @microsoft/rush
 
 ## Copy iTerm2 settings
 defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.00001

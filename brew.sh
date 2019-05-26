@@ -16,7 +16,7 @@ brew install openssh
 brew install htop
 brew install curl
 brew install git
-brew install ffmpeg
+brew install git-lfs
 brew install bash
 brew install imagemagick
 brew install mpv
@@ -34,8 +34,10 @@ brew install dockutil
 brew install ansible
 brew install jq
 brew install wine
+brew install winetricks
 brew install tor
 brew install awscli
+brew install awsebcli
 brew install z
 brew install diff-so-fancy
 brew install oath-toolkit
@@ -45,7 +47,12 @@ brew install packer
 brew install redis
 brew install opencv
 brew install interline-io/planetutils/osmctools
-#brew install mas
+brew install shellcheck
+brew install aws-iam-authenticator
+brew install kubernetes-cli
+brew tap varenc/ffmpeg
+brew install ffmpeg
+
 
 ## use the brew bash version as default shell
 if ! fgrep -q "/usr/local/bin/bash" /etc/shells; then
@@ -77,5 +84,6 @@ brew cask install qlstephen
 brew cask install qlmarkdown
 brew cask install quicklook-json
 #brew cask install pgadmin4
+brew cask install docker
 
 brew cleanup

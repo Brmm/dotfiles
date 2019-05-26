@@ -246,6 +246,9 @@ sudo defaults write com.apple.dock autohide -bool true
 # Make Dock icons of hidden applications translucent
 sudo defaults write com.apple.dock showhidden -bool true
 
+# Keep using light theme for Chrome
+sudo defaults write com.google.Chrome NSRequiresAquaSystemAppearance -bool yes
+
 killall Dock
 killall Finder
 

@@ -22,7 +22,7 @@ set_aws_env_profile() {
 }
 
 copy_dotfiles() {
-   cp $HOME/setup/dotfiles/.??* $HOME
+   cp $HOME/dotfiles/home/.??* $HOME
 }
 
 flushdns() {
