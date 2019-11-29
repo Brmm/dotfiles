@@ -1,0 +1,24 @@
+{
+  root: true,
+  extends: [
+    "eslint:recommended"
+  ],
+  env: {
+    "node": true,
+    "es6": true
+  },
+  parserOptions: {
+    "ecmaVersion": 2017
+  },
+  rules: {
+    indent: [0, 2],
+    'no-console': 1,
+    'no-var': 1,
+    'prefer-const': 1,
+    'no-unused-vars': 1,
+    quotes: [1, 'single'],
+    'quote-props': [2, 'as-needed'],
+    'object-curly-spacing': [1, 'always'],
+    'arrow-parens': [1, 'as-needed']
+  }
+}

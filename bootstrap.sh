@@ -24,13 +24,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-nvm install 10
-
-nvm use 10
-npm install -g eslint npm npm-check-updates create-react-native-app yarn serverless tslint typescript prettier pnpm pm2 @microsoft/rush
+nvm install 12
+nvm use 12
+npm install -g eslint npm npm-check-updates create-react-native-app yarn serverless typescript prettier lerna
 
 ## Copy iTerm2 settings
-defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.00001
+# defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.00001
 cp "./files/com.googlecode.iterm2.plist" ~/Library/Preferences
 
 ## Configure the Dock
@@ -41,14 +40,12 @@ dockutil --add "/Applications/Mail.app"
 dockutil --add "/Applications/iTerm.app" --after "Mail"
 dockutil --add "/Applications/Google Chrome.app"
 dockutil --add "/Applications/TextMate.app"
-dockutil --add "/Applications/Sublime Text.app"
-dockutil --add "/Applications/Robo 3T.app"
+dockutil --add "/Applications/Visual Studio Code.app"
 dockutil --add "/Applications/Messages.app"
 dockutil --add "/Applications/WhatsApp.app"
-dockutil --add "/Applications/Cyberduck.app"
 dockutil --add "/Applications/iTunes.app"
-dockutil --add "/Applications/Safari.app"
 dockutil --add "/Applications/FireFox.app"
+dockutil --add "/Applications/Safari.app"
 dockutil --add "/Applications/Calendar.app"
 dockutil --add "/Applications/Notes.app"
 
@@ -58,5 +55,4 @@ open "/Applications/Flux.app"
 open "/Applications/Tunnelblick.app"
 open "/Applications/iTerm.app"
 open "/Applications/Dropbox.app"
-open "/Applications/Robo 3T.app"
-open "/Applications/Cyberduck.app"
+open "/Applications/Docker.app"

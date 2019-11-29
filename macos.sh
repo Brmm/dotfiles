@@ -249,6 +249,10 @@ sudo defaults write com.apple.dock showhidden -bool true
 # Keep using light theme for Chrome
 sudo defaults write com.google.Chrome NSRequiresAquaSystemAppearance -bool yes
 
+# Prevent Photos from opening automatically when devices are plugged in
+sudo defaults write com.apple.ImageCapture disableHotPlug -bool true
+
+
 killall Dock
 killall Finder
 

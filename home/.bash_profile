@@ -11,7 +11,7 @@ source ~/.bash_prompt
 . /usr/local/etc/profile.d/z.sh
 
 # load nvm
-source ~/.nvm/nvm.sh && nvm use 10
+source ~/.nvm/nvm.sh && nvm use 12
 export NODE_PATH=~/.nvm/versions/node/$(node -v)/lib/node_modules/
 export NODE_ENV='development'
 

@@ -14,14 +14,15 @@ brew install coreutils
 brew install bash-completion
 brew install openssh
 brew install htop
+brew install tmux
 brew install curl
+brew install curl-openssl
 brew install git
 brew install git-lfs
 brew install bash
 brew install imagemagick
 brew install mpv
 brew install telnet
-brew install mongodb
 brew install openssl
 brew install python
 brew install python3
@@ -37,22 +38,22 @@ brew install wine
 brew install winetricks
 brew install tor
 brew install awscli
-brew install awsebcli
 brew install z
 brew install diff-so-fancy
-brew install oath-toolkit
 brew install terraform
 brew install nmap
 brew install packer
-brew install redis
-brew install opencv
 brew install interline-io/planetutils/osmctools
 brew install shellcheck
-brew install aws-iam-authenticator
 brew install kubernetes-cli
 brew tap varenc/ffmpeg
 brew install ffmpeg
 
+# brew install awsebcli
+# brew install oath-toolkit
+# brew install aws-iam-authenticator
+# brew install redis
+# brew install opencv
 
 ## use the brew bash version as default shell
 if ! fgrep -q "/usr/local/bin/bash" /etc/shells; then
@@ -77,13 +78,15 @@ brew cask install transmission
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install clipy
-#brew cask install sketch
-#brew cask install sequel-pro
-#brew cask install google-cloud-sdk
 brew cask install qlstephen
 brew cask install qlmarkdown
 brew cask install quicklook-json
-#brew cask install pgadmin4
+brew cask install tableplus
 brew cask install docker
+
+#brew cask install sketch
+#brew cask install sequel-pro
+#brew cask install google-cloud-sdk
+#brew cask install pgadmin4
 
 brew cleanup
