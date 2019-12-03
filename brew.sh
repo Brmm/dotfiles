@@ -34,7 +34,6 @@ brew install rsync
 brew install dockutil
 brew install ansible
 brew install jq
-brew install wine
 brew install winetricks
 brew install tor
 brew install awscli
@@ -67,7 +66,6 @@ brew cask install textmate
 brew cask install google-chrome
 brew cask install firefox
 brew cask install robo-3t
-brew cask install sublime-text
 brew cask install vlc
 brew cask install cyberduck
 brew cask install whatsapp
@@ -83,7 +81,11 @@ brew cask install qlmarkdown
 brew cask install quicklook-json
 brew cask install tableplus
 brew cask install docker
+brew cask install xquartz
+brew cask install wine-stable
+brew cask install visual-studio-code
 
+#brew cask install vox
 #brew cask install sketch
 #brew cask install sequel-pro
 #brew cask install google-cloud-sdk

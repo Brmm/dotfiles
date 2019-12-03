@@ -6,7 +6,7 @@ export EDITOR='nano';
 export HISTCONTROL=erasedups # Erase duplicates in history
 export HISTSIZE=10000000000
 export HISTFILESIZE=${HISTSIZE} # Lots o' history.
-export HISTIGNORE="ls:cd:history:nano:tor:subl:exit:mkdir:mv:cp"
+export HISTIGNORE="ls:cd:history:nano:tor:exit:mkdir:mv:cp"
 
 export GREP_OPTIONS='--color=auto' # Always enable colored `grep` output.
 

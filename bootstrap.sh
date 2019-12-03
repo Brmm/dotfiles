@@ -32,24 +32,24 @@ npm install -g eslint npm npm-check-updates create-react-native-app yarn serverl
 # defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.00001
 cp "./files/com.googlecode.iterm2.plist" ~/Library/Preferences
 
-## Configure the Dock
-open "/Applications/iTunes.app"
+## Copy f.lux settings
+cp "./files/org.herf.Flux.plist" ~/Library/Preferences
 
+## Configure the Dock
 dockutil --remove all
-dockutil --add "/Applications/Mail.app"
+dockutil --add "/System/Applications/Mail.app"
 dockutil --add "/Applications/iTerm.app" --after "Mail"
 dockutil --add "/Applications/Google Chrome.app"
 dockutil --add "/Applications/TextMate.app"
 dockutil --add "/Applications/Visual Studio Code.app"
-dockutil --add "/Applications/Messages.app"
+dockutil --add "/System/Applications/Messages.app"
 dockutil --add "/Applications/WhatsApp.app"
-dockutil --add "/Applications/iTunes.app"
+dockutil --add "/System/Applications/Music.app"
 dockutil --add "/Applications/FireFox.app"
 dockutil --add "/Applications/Safari.app"
-dockutil --add "/Applications/Calendar.app"
-dockutil --add "/Applications/Notes.app"
+dockutil --add "/System/Applications/Calendar.app"
+dockutil --add "/System/Applications/Notes.app"
 
-open "/Applications/Sublime Text.app"
 open "/Applications/Clipy.app"
 open "/Applications/Flux.app"
 open "/Applications/Tunnelblick.app"
