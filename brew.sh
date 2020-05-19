@@ -48,6 +48,16 @@ brew install kubernetes-cli
 brew tap varenc/ffmpeg
 brew install ffmpeg
 
+brew install golang
+brew install leveldb
+
+# geo stuff
+brew install imposm3
+brew install geos
+brew install ogr2ogr
+brew install gdal
+brew install postgis
+
 # brew install awsebcli
 # brew install oath-toolkit
 # brew install aws-iam-authenticator
@@ -84,7 +94,9 @@ brew cask install docker
 brew cask install xquartz
 brew cask install wine-stable
 brew cask install visual-studio-code
-
+brew cask install homebrew/cask-versions/adoptopenjdk8
+brew cask install josm
+brew cask install qgis
 #brew cask install vox
 #brew cask install sketch
 #brew cask install sequel-pro
