@@ -24,45 +24,54 @@ brew install imagemagick
 brew install mpv
 brew install telnet
 brew install openssl
-brew install python
-brew install python3
-brew install sqlite
 brew install tree
 brew install wget
-brew install youtube-dl
 brew install rsync
 brew install dockutil
-brew install ansible
-brew install jq
 brew install winetricks
 brew install tor
-brew install awscli
-brew install z
-brew install diff-so-fancy
-brew install terraform
 brew install nmap
-brew install packer
-brew install interline-io/planetutils/osmctools
 brew install shellcheck
-brew install kubernetes-cli
 brew tap varenc/ffmpeg
 brew install ffmpeg
+brew install youtube-dl
+brew install diff-so-fancy
+brew install z
+brew install jq
+brew install yq
+# brew install opencv
 
+# devops & cloud
+brew install awscli
+brew install kubernetes-cli
+brew install terraform
+brew install ansible
+brew install pulumi
+brew install sops
+brew install helm
+brew install helmfile
+# brew install packer
+# brew install awsebcli
+# brew install aws-iam-authenticator
+# brew install oath-toolkit
+
+# lang
 brew install golang
+brew install python
+brew install python3
+
+# db
+brew tap mongodb/brew
+brew install mongodb-community
+brew install sqlite
 brew install leveldb
 
-# geo stuff
-brew install imposm3
+# geo
 brew install geos
-brew install ogr2ogr
 brew install gdal
 brew install postgis
-
-# brew install awsebcli
-# brew install oath-toolkit
-# brew install aws-iam-authenticator
 # brew install redis
-# brew install opencv
+
 
 ## use the brew bash version as default shell
 if ! fgrep -q "/usr/local/bin/bash" /etc/shells; then
@@ -83,7 +92,6 @@ brew cask install dropbox
 brew cask install tunnelblick
 brew cask install flux
 brew cask install transmission
-brew cask install virtualbox
 brew cask install vagrant
 brew cask install clipy
 brew cask install qlstephen
@@ -97,6 +105,8 @@ brew cask install visual-studio-code
 brew cask install homebrew/cask-versions/adoptopenjdk8
 brew cask install josm
 brew cask install qgis
+#brew cask install virtualbox
+
 #brew cask install vox
 #brew cask install sketch
 #brew cask install sequel-pro
