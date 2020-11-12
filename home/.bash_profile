@@ -14,6 +14,7 @@ source ~/.bash_prompt
 source ~/.nvm/nvm.sh && nvm use 10
 export NODE_PATH=~/.nvm/versions/node/$(node -v)/lib/node_modules/
 export NODE_ENV='development'
+export NODE_OPTIONS=--max_old_space_size=4096
 
 # load bash completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion

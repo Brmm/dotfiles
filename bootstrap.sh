@@ -12,7 +12,7 @@ chmod +x ./brew.sh
 ./brew.sh
 
 # Helm
-helm plugin install https://github.com/futuresimple/helm-secrets
+# helm plugin install https://github.com/futuresimple/helm-secrets
 
 # compile osmctools
 cat files/osmctools/osmconvert.c | cc -x c - -lz -O3 -o osmconvert
@@ -33,11 +33,18 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | ba
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-## NPM
 nvm install 10
 nvm use 10
-npm install -g create-react-native-app eslint lerna npm-check-updates prettier typescript yarn
+
+## NPM
+npm install -g \
+  # create-react-native-app \
+  eslint \
+  lerna \
+  npm-check-updates \
+  prettier \
+  typescript \
+  yarn
 
 ## Copy iTerm2 settings
 # defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.00001

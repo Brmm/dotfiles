@@ -28,3 +28,7 @@ copy_dotfiles() {
 flushdns() {
   sudo killall -HUP mDNSResponder
 }
+
+directory_sizes() {
+   du -h -hd1 | sort -hr
+}
