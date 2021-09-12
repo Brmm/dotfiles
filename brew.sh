@@ -14,14 +14,14 @@ brew install coreutils
 brew install bash-completion
 brew install openssh
 brew install htop
-brew install tmux
+# brew install tmux
 brew install curl
 brew install curl-openssl
 brew install git
 brew install git-lfs
 brew install bash
 brew install imagemagick
-brew install mpv
+# brew install mpv
 brew install telnet
 brew install openssl
 brew install tree
@@ -34,7 +34,7 @@ brew install nmap
 # brew install shellcheck
 brew tap varenc/ffmpeg
 brew install ffmpeg
-brew install youtube-dl
+# brew install youtube-dl
 brew install diff-so-fancy
 brew install z
 brew install jq
@@ -49,11 +49,13 @@ brew install ansible
 brew install pulumi
 # brew install sops
 brew install helm
+brew install kustomize
 # brew install helmfile
 # brew install packer
 # brew install awsebcli
-# brew install aws-iam-authenticator
+brew install aws-iam-authenticator
 # brew install oath-toolkit
+brew install mkcert
 
 # lang
 brew install golang
@@ -61,16 +63,19 @@ brew install python
 brew install python3
 
 # db
-brew tap mongodb/brew
-brew install mongodb-community
-brew install sqlite
-brew install leveldb
+# brew tap mongodb/brew
+# brew install mongodb-community
+# brew install sqlite
+# brew install leveldb
 # brew install redis
 
 # geo
 brew install geos
 brew install gdal
 brew install postgis
+
+# html / pdf 
+brew install tidy-html5
 
 
 ## use the brew bash version as default shell
@@ -79,38 +84,32 @@ if ! fgrep -q "/usr/local/bin/bash" /etc/shells; then
   sudo chsh -s /usr/local/bin/bash $(whoami)
 fi;
 
-# brew tap homebrew/cask-version
-brew cask install iterm2
-brew cask install textmate
-brew cask install google-chrome
-brew cask install firefox
-brew cask install robo-3t
-brew cask install vlc
-brew cask install cyberduck
-brew cask install whatsapp
-brew cask install dropbox
-brew cask install tunnelblick
-brew cask install flux
-brew cask install transmission
-# brew cask install vagrant
-brew cask install clipy
-brew cask install qlstephen
-brew cask install qlmarkdown
-brew cask install quicklook-json
-brew cask install tableplus
-brew cask install docker
-# brew cask install xquartz
-# brew cask install wine-stable
-brew cask install visual-studio-code
-# brew cask install homebrew/cask-versions/adoptopenjdk8
-# brew cask install josm
-# brew cask install qgis
-# brew cask install virtualbox
-
-# brew cask install vox
-# brew cask install sketch
-# brew cask install sequel-pro
-# brew cask install google-cloud-sdk
-# brew cask install pgadmin4
+brew install --cask iterm2
+brew install --cask textmate
+brew install --cask google-chrome
+brew install --cask firefox
+brew install --cask robo-3t
+brew install --cask vlc
+brew install --cask cyberduck
+brew install --cask whatsapp
+brew install --cask dropbox
+brew install --cask tunnelblick
+brew install --cask flux
+brew install --cask transmission
+brew install --cask clipy
+brew install --cask qlstephen
+brew install --cask qlmarkdown
+# brew install --cask quicklook-json
+brew install --cask tableplus
+brew install --cask docker
+brew install --cask lens
+brew install --cask libreoffice
+# brew install --cask xquartz
+# brew install --cask wine-stable
+brew install --cask visual-studio-code
+# brew install --cask homebrew/cask-versions/adoptopenjdk8
+# brew install --cask josm
+# brew install --cask qgis
+# brew install --cask virtualbox
 
 brew cleanup
