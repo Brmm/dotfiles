@@ -28,7 +28,7 @@ brew install tree
 brew install wget
 brew install rsync
 brew install dockutil
-brew install winetricks
+# brew install winetricks
 brew install tor
 brew install nmap
 # brew install shellcheck
@@ -72,7 +72,7 @@ brew install python3
 # geo
 brew install geos
 brew install gdal
-brew install postgis
+# brew install postgis
 
 # html / pdf 
 brew install tidy-html5
