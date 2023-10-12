@@ -11,11 +11,14 @@ source ~/.bash_prompt
 . /usr/local/etc/profile.d/z.sh
 
 # load nvm
-source ~/.nvm/nvm.sh && nvm use 10
+source ~/.nvm/nvm.sh && nvm use 20
 export NODE_PATH=~/.nvm/versions/node/$(node -v)/lib/node_modules/
-export NODE_ENV='development'
-export NODE_OPTIONS=--max_old_space_size=4096
+#export NODE_ENV='development'
+#export NODE_OPTIONS=--max_old_space_size=4096
 
 # load bash completion
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion" # nvm bash completion
+#[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+#[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion" # nvm bash completion
+
+# add psql
+#PATH="/usr/local/opt/libpq/bin:$PATH"
